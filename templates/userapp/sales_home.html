@@ -1,0 +1,39 @@
+{% extends "userapp/layout.html" %} {% load static %}
+{% block title %}
+About us
+{% endblock %}
+  {% block body %}
+
+  <link rel="stylesheet" href="{% static 'userapp/sass/sales_home.cs' %}">
+
+  
+
+
+  <header class="explug-page-header "> 
+    <div class="container">
+       <div class="row">
+          <div class="col-12">
+             <div class="page-title-wrap"><ul class="page-title-elements page-title-center pull-center"><h1 class="page-title">Compatabile EVs</h1><div class="breadcrumbs-wrap"><li class="breadcrumb-wrap"><ul id="breadcrumb" class="breadcrumb nav"><li><a href="../index.htm"><span>Home</span></a><i class="breadcrumb-delimiter"></i></li> <li>About Us</li></ul></li></div><!-- .breadcrumbs-wrap --></ul></div><!-- .page-title-wrap -->				</div>
+       </div>
+    </div><!-- .container -->
+ </header>
+
+
+<main>
+    <div class="salesBanner">
+        <img src="{% static 'userapp/svg/sales_home_art.svg' %}">
+        <section class="text">
+            <h2>Looking For EVs with all the details?
+                <br>You are in the right place.</h2>
+            
+        </section>
+    </div>
+    <div class="vehicle-types">
+        <a href="{% url 'two-wheelers' %}"><img src="{% static 'userapp/svg/two_wheelers.svg' %}"
+                alt="two wheelers"></a>
+        <a href="{% url 'three-wheelers' %}"><img src="{% static 'userapp/svg/three_wheelers.svg' %}" alt="three wheelers"></a>
+        <a href="{% url 'four-wheelers' %}"><img src="{% static 'userapp/svg/four_wheelers.svg' %}" alt="four wheelers"></a>
+        <a href="{% url 'heavy-vehicles' %}"><img src="{% static 'userapp/svg/heavy_vehicles.svg' %}" alt="heavy vehicles"></a>
+    </div>
+</main>
+{% endblock body %}

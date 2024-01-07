@@ -1,0 +1,26 @@
+{% extends 'userapp/layout.html' %}
+{% load static %}
+{% block head %}
+<title>Sign Up</title>
+{% endblock head %}
+{% block body %}
+ 
+<header class="explug-page-header "> 
+    <div class="container">
+       <div class="row">
+          <div class="col-12">
+             <div class="page-title-wrap"><ul class="page-title-elements page-title-center pull-center"><h1 class="page-title">Connect with Us!</h1><div class="breadcrumbs-wrap"><li class="breadcrumb-wrap"><ul id="breadcrumb" class="breadcrumb nav"><li><a href="../index.htm"></a></li> </ul></li></div><!-- .breadcrumbs-wrap --></ul></div><!-- .page-title-wrap -->				</div>
+       </div>
+    </div><!-- .container -->
+ </header>
+
+<main>
+    <div class="signupOptions">
+        <a href="{% url 'registerConsumer' %}"><img src="{% static 'userapp/svg/consumer_art.svg' %}" src="consumer"></a>
+        <a href="{% url 'registerProvider' %}"><img src="{% static 'userapp/svg/provider_art.svg' %}" alt="provider"></a>
+    </div>
+
+    <h1><p>Already have account? <span><a href="{% url 'account_login' %}">Log in</a></span> instead.</p></h1>
+</main>
+
+{% endblock body %}

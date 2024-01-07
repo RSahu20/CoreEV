@@ -1,0 +1,968 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html class="no-js" lang="en-US">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<title>Core &#8211; EV &amp; Simplify EV Living</title>
+	<link rel="preload" as="style"
+		href="../css?family=Plus%20Jakarta%20Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CDM%20Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%3A400%7CPlus%20Jakarta%20Sans%3A700%2C800%7CDM%20Sans%3A700&#038;display=swap">
+	<link rel="stylesheet"
+		href="../css?family=Plus%20Jakarta%20Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CDM%20Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%3A400%7CPlus%20Jakarta%20Sans%3A700%2C800%7CDM%20Sans%3A700&#038;display=swap"
+		media="print" onload="this.media='all'"><noscript>
+		<link rel="stylesheet"
+			href="../css?family=Plus%20Jakarta%20Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CDM%20Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%3A400%7CPlus%20Jakarta%20Sans%3A700%2C800%7CDM%20Sans%3A700&#038;display=swap">
+	</noscript>
+	<meta name='robots' content='max-image-preview:large'>
+   <link rel="stylesheet" type="text/css" href="{%  static 'userapp/sass/styles.css' %}">
+
+	<link href='https://fonts.gstatic.com' crossorigin="" rel='preconnect'>
+	<link rel="alternate" type="application/rss+xml" title="Explug &raquo; Feed" href="feed/index.htm">
+	<link rel="alternate" type="application/rss+xml" title="Explug &raquo; Comments Feed"
+		href="comments/feed/index.htm">
+	<style>
+		img.wp-smiley,
+		img.emoji {
+			display: inline !important;
+			border: none !important;
+			box-shadow: none !important;
+			height: 1em !important;
+			width: 1em !important;
+			margin: 0 0.07em !important;
+			vertical-align: -0.1em !important;
+			background: none !important;
+			padding: 0 !important;
+		}
+	</style>
+	<link data-minify="1" rel='stylesheet' id='zhf-admin-css'
+		href="{% static 'wp-content/cache/min/10/explug/wp-content/plugins/zozo-header-footer/admin/assets/css/zhf-meta-box.css' %}"
+		media='all'>
+	<link data-minify="1" rel='stylesheet' id='zozo-select2-css'
+		href="{% static 'wp-content/cache/min/10/explug/wp-content/plugins/zozo-header-footer/admin/target-rule/select2.css' %}"
+		media='all'>
+	<link data-minify="1" rel='stylesheet' id='zozo-target-rule-css'
+		href="{% static 'wp-content/cache/min/10/explug/wp-content/plugins/zozo-header-footer/admin/target-rule/target-rule.css' %}"
+		media='all'>
+	<link rel='stylesheet' id='bootstrap-css'
+		href="{% static 'wp-content/plugins/classic-elementor-addons-pro/assets/css/bootstrap.min.css' %}" media='all'>
+	<link rel='stylesheet' id='owl-carousel-css'
+		href="{% static 'wp-content/plugins/classic-elementor-addons-pro/assets/css/owl.carousel.min.css' %}" media='all'>
+		<link rel='stylesheet' id='middle'
+		href="{% static 'wp-content/plugins/classic-elementor-addons-pro/assets/css/middle.css' %}" media='all'>
+		<link rel='stylesheet' id='image-hover-css'
+		href="{% static 'wp-content/plugins/classic-elementor-addons-pro/assets/css/image-hover.min.css' %}" media='all'>
+	<link data-minify="1" rel='stylesheet' id='fontawesome-css'
+		href="{% static 'wp-content/cache/min/10/explug/wp-content/plugins/classic-elementor-addons-pro/assets/css/font-awesome.css' %}"
+		media='all'>
+	<link data-minify="1" rel='stylesheet' id='themify-icons-css'
+		href="{% static 'wp-content/cache/min/10/explug/wp-content/plugins/zozo-header-footer/assets/css/themify-icons.css' %}"
+		media='all'>
+	<link data-minify="1" rel='stylesheet' id='bootstrap-icons-css'
+		href="{% static 'wp-content/cache/min/10/explug/wp-content/plugins/classic-elementor-addons-pro/assets/css/bootstrap-icons.css' %}"
+		media='all'>
+	<link data-minify="1" rel='stylesheet' id='cea-style-css'
+		href="{% static 'wp-content/cache/min/10/explug/wp-content/plugins/classic-elementor-addons-pro/assets/css/style.css' %}"
+		media='all'>
+	
+	<link rel='stylesheet' id='cea-style-inline-css' href="{% static 'wp-content/themes/explug/assets/css/cea-style-inline.css' %}"
+		media='all'>
+	
+	<!-- <style id='cea-style-inline-css'> -->
+		
+	<!-- </style> -->
+	<link rel='stylesheet' id='cea-shortcode-style-css'
+		href="{% static 'wp-content/plugins/classic-elementor-addons-pro/assets/css/shortcode-styles.css' %}" media='all'>
+	<link rel='stylesheet' id='wp-block-library-css' href="{% static 'wp-includes/css/dist/block-library/style.min.css' %}"
+		media='all'>
+	<link rel='stylesheet' id='wp-block-library-theme-inline-css' href="{% static 'wp-content/themes/explug/assets/css/wp-block-library-theme-inline.css' %}"
+		media='all'>	
+	<!-- <style id='wp-block-library-theme-inline-css'> -->
+		
+	<!-- </style> -->
+	<link data-minify="1" rel='stylesheet' id='wc-blocks-vendors-style-css'
+		href="{% static 'wp-content/cache/min/10/explug/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/wc-blocks-vendors-style.css' %}"
+		media='all'>
+	<link data-minify="1" rel='stylesheet' id='wc-all-blocks-style-css'
+		href="{% static 'wp-content/cache/min/10/explug/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/wc-all-blocks-style.css' %}"
+		media='all'>
+		
+	<style id='classic-theme-styles-inline-css'>
+		/*! This file is auto-generated */
+		.wp-block-button__link {
+			color: #fff;
+			background-color: #32373c;
+			border-radius: 9999px;
+			box-shadow: none;
+			text-decoration: none;
+			padding: calc(.667em + 2px) calc(1.333em + 2px);
+			font-size: 1.125em
+		}
+
+		.wp-block-file__button {
+			background: #32373c;
+			color: #fff;
+			text-decoration: none
+		}
+	</style>
+	<link rel='stylesheet' id='global-styles-inline-css' href="{% static 'wp-content/themes/explug/assets/css/global-styles-inline.css' %}"
+	media='all'>
+	<!-- <style id='global-styles-inline-css'> -->
+		
+	<!-- </style> -->
+	<link data-minify="1" rel='stylesheet' id='contact-form-7-css'
+		href="{% static 'wp-content/cache/min/10/explug/wp-content/plugins/contact-form-7/includes/css/styles.css' %}" media='all'>
+	<link data-minify="1" rel='stylesheet' id='font-awesome-css'
+		href="{% static 'wp-content/cache/min/10/explug/wp-content/plugins/elementor/assets/lib/font-awesome/css/font-awesome.min.css' %}"
+		media='all'>
+	<link data-minify="1" rel='stylesheet' id='woocommerce-layout-css'
+		href="{% static 'wp-content/cache/min/10/explug/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css' %}"
+		media='all'>
+	<link data-minify="1" rel='stylesheet' id='woocommerce-smallscreen-css'
+		href="{% static 'wp-content/cache/min/10/explug/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css' %}"
+		media='only screen and (max-width: 768px)'>
+	<link data-minify="1" rel='stylesheet' id='woocommerce-general-css'
+		href="{% static 'wp-content/cache/min/10/explug/wp-content/plugins/woocommerce/assets/css/woocommerce.css' %}" media='all'>
+	<style id='woocommerce-inline-inline-css'>
+		.woocommerce form .form-row .required {
+			visibility: visible;
+		}
+	</style>
+	<link rel='stylesheet' id='bootstrap-5-css' href="{% static 'wp-content/themes/explug/assets/css/bootstrap.min.css' %}"
+		media='all'>
+	<link data-minify="1" rel='stylesheet' id='explug-style-css'
+		href="{% static 'wp-content/cache/min/10/explug/wp-content/themes/explug/style.css' %}" media='all'>
+		<link rel='stylesheet' id='explug-style-inline-css' href="{% static 'wp-content/themes/explug/assets/css/explug-style-inline.css' %}"
+		media='all'>
+	<!-- <style id='explug-style-inline-css'> -->
+	
+	<!-- </style> -->
+	<link data-minify="1" rel='stylesheet' id='explug-woo-style-css'
+		href="{% static 'wp-content/cache/min/10/explug/wp-content/themes/explug/assets/css/woo-styles.css' %}" media='all'>
+	<link data-minify="1" rel='stylesheet' id='elementor-icons-css'
+		href="{% static 'wp-content/cache/min/10/explug/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css' %}"
+		media='all'>
+	<link rel='stylesheet' id='elementor-frontend-css'
+		href="{% static 'wp-content/plugins/elementor/assets/css/frontend-lite.min.css' %}" media='all'>
+	<link data-minify="1" rel='stylesheet' id='swiper-css'
+		href="{% static 'wp-content/cache/min/10/explug/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css' %}"
+		media='all'>
+	<link rel='stylesheet' id='elementor-post-15-css' href="{% static 'wp-content/uploads/sites/10/elementor/css/post-15.css' %}"
+		media='all'>
+	<link rel='stylesheet' id='elementor-post-57241-css' href="{% static 'wp-content/uploads/sites/10/elementor/css/post-57241.css' %}"
+		media='all'>
+
+	<link data-minify="1" rel='stylesheet' id='elementor-icons-shared-2-css'
+		href='wp-content/cache/min/10/explug/wp-content/plugins/classic-elementor-addons-pro/assets/css/bootstrap-icons.css'
+		media='all'>
+	<link data-minify="1" rel='stylesheet' id='elementor-icons-bootstrap-css'
+		href='wp-content/cache/min/10/explug/wp-content/plugins/classic-elementor-addons-pro/assets/css/bootstrap-icons.css'
+		media='all'>
+	<link data-minify="1" rel='stylesheet' id='elementor-icons-shared-1-css'
+		href='wp-content/cache/min/10/explug/wp-content/plugins/classic-elementor-addons-pro/assets/css/themify-icons.css'
+		media='all'>
+	<link data-minify="1" rel='stylesheet' id='elementor-icons-themify-css'
+		href='wp-content/cache/min/10/explug/wp-content/plugins/classic-elementor-addons-pro/assets/css/themify-icons.css'
+		media='all'>
+	<link rel='stylesheet' id='elementor-icons-shared-0-css'
+		href='wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.3' media='all'>
+	<link data-minify="1" rel='stylesheet' id='elementor-icons-fa-solid-css'
+		href="{% static 'wp-content/cache/min/10/explug/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css' %}"
+		media='all'>
+	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+
+	<script id='explugjs-js-extra'>
+		var explug_ajax_var = { "ajax_url": "https:\/\/wordpress.zozothemes.com\/explug\/wp-admin\/admin-ajax.php", "add_to_cart": "9d2a4a7d6f", "remove_from_cart": "9c9f52cc13", "cart_update_pbm": "Cart Update Problem.", "wishlist_remove": "e568d9d28b", "product_view": "9e2c85406c", "mc_nounce": "32eb2c737f", "must_fill": "Must Fill Required Details.", "valid_email": "Enter Valid Email ID.", "header_offset": "79", "mheader_offset": "59", "res_width": "1024" };
+	</script>
+
+	<link rel="https://api.w.org/" href="wp-json/index.htm">
+	<link rel="alternate" type="application/json" href="wp-json/wp/v2/pages/57241">
+	<link rel="EditURI" type="application/rsd+xml" title="RSD"
+		href="https://wordpress.zozothemes.com/explug/xmlrpc.php">
+	<meta name="generator" content="WordPress 6.3.2">
+	<meta name="generator" content="WooCommerce 8.1.1">
+	<link rel="canonical" href="index.htm">
+	<link rel='shortlink' href='index.htm'>
+	<link rel="alternate" type="application/json+oembed"
+		href="wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwordpress.zozothemes.com%2Fexplug%2F">
+	<link rel="alternate" type="text/xml+oembed"
+		href="wp-json/oembed/1.0/embed-1?url=https%3A%2F%2Fwordpress.zozothemes.com%2Fexplug%2F&#038;format=xml">
+
+
+	<noscript>
+		<style>
+			.woocommerce-product-gallery {
+				opacity: 1 !important;
+			}
+		</style>
+	</noscript>
+	<meta name="generator"
+		content="Elementor 3.16.5; features: e_dom_optimization, e_optimized_assets_loading, e_optimized_css_loading, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
+	<meta name="generator"
+		content="Powered by Slider Revolution 6.6.15 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface.">
+	<link rel="icon" href="{% static 'wp-content/uploads/sites/10/2023/08/cropped-fav-icon-32x32.png' %}" sizes="32x32">
+	<link rel="icon" href="{% static 'wp-content/uploads/sites/10/2023/08/cropped-fav-icon-192x192.png' %}" sizes="192x192">
+	<link rel="apple-touch-icon" href="{% static 'wp-content/uploads/sites/10/2023/08/cropped-fav-icon-180x180.png' %}">
+	<meta name="msapplication-TileImage"
+		content="https://wordpress.zozothemes.com/explug/wp-content/uploads/sites/10/2023/08/cropped-fav-icon-270x270.png">
+	<script>function setREVStartSize(e) {
+			//window.requestAnimationFrame(function() {
+			window.RSIW = window.RSIW === undefined ? window.innerWidth : window.RSIW;
+			window.RSIH = window.RSIH === undefined ? window.innerHeight : window.RSIH;
+			try {
+				var pw = document.getElementById(e.c).parentNode.offsetWidth,
+					newh;
+				pw = pw === 0 || isNaN(pw) || (e.l == "fullwidth" || e.layout == "fullwidth") ? window.RSIW : pw;
+				e.tabw = e.tabw === undefined ? 0 : parseInt(e.tabw);
+				e.thumbw = e.thumbw === undefined ? 0 : parseInt(e.thumbw);
+				e.tabh = e.tabh === undefined ? 0 : parseInt(e.tabh);
+				e.thumbh = e.thumbh === undefined ? 0 : parseInt(e.thumbh);
+				e.tabhide = e.tabhide === undefined ? 0 : parseInt(e.tabhide);
+				e.thumbhide = e.thumbhide === undefined ? 0 : parseInt(e.thumbhide);
+				e.mh = e.mh === undefined || e.mh == "" || e.mh === "auto" ? 0 : parseInt(e.mh, 0);
+				if (e.layout === "fullscreen" || e.l === "fullscreen")
+					newh = Math.max(e.mh, window.RSIH);
+				else {
+					e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
+					for (var i in e.rl) if (e.gw[i] === undefined || e.gw[i] === 0) e.gw[i] = e.gw[i - 1];
+					e.gh = e.el === undefined || e.el === "" || (Array.isArray(e.el) && e.el.length == 0) ? e.gh : e.el;
+					e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
+					for (var i in e.rl) if (e.gh[i] === undefined || e.gh[i] === 0) e.gh[i] = e.gh[i - 1];
+
+					var nl = new Array(e.rl.length),
+						ix = 0,
+						sl;
+					e.tabw = e.tabhide >= pw ? 0 : e.tabw;
+					e.thumbw = e.thumbhide >= pw ? 0 : e.thumbw;
+					e.tabh = e.tabhide >= pw ? 0 : e.tabh;
+					e.thumbh = e.thumbhide >= pw ? 0 : e.thumbh;
+					for (var i in e.rl) nl[i] = e.rl[i] < window.RSIW ? 0 : e.rl[i];
+					sl = nl[0];
+					for (var i in nl) if (sl > nl[i] && nl[i] > 0) { sl = nl[i]; ix = i; }
+					var m = pw > (e.gw[ix] + e.tabw + e.thumbw) ? 1 : (pw - (e.tabw + e.thumbw)) / (e.gw[ix]);
+					newh = (e.gh[ix] * m) + (e.tabh + e.thumbh);
+				}
+				var el = document.getElementById(e.c);
+				if (el !== null && el) el.style.height = newh + "px";
+				el = document.getElementById(e.c + "_wrapper");
+				if (el !== null && el) {
+					el.style.height = newh + "px";
+					el.style.display = "block";
+				}
+			} catch (e) {
+				console.log("Failure at Presize of Slider:" + e)
+			}
+			//});
+		};</script>
+	<style id="wp-custom-css">
+		.single-cea-portfolio .portfolio-image-inner {
+			height: 512px;
+		}
+
+		@media only screen and (max-width: 1024px) {
+			.single-cea-portfolio .portfolio-image-inner {
+				height: auto;
+			}
+		}
+	</style>
+</head>
+   <body class="home page-template-default page page-id-57241 theme-explug woocommerce-no-js elementor-default elementor-kit-15 elementor-page elementor-page-57241 initiate">
+	<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <style>
+        df-messenger {
+            --df-messenger-send-icon: #000000;
+            --df-messenger-button-titlebar-color: #90ff82;
+        }
+    </style>
+    <df-messenger intent="WELCOME" chat-title="CoreEV chatbot" agent-id="348918d8-72c3-486c-88b3-17ea3047c1f6"
+        language-code="en" chat-icon="https://www.synaptive.com/img/chatbot.png" alt="chatbot-icon">
+    </df-messenger>
+      <div class="explug-body-inner">
+         <div class="sticky-outer" data-stickyup="0">
+            <div class="sticky-head">
+               <div class="header-mobilebar navbar">
+                  <div class="container">
+                     <ul class="nav mobilebar element-left right-element-exist">
+                        <li class="header-mobile-toggle-wrapper">
+                           <a href="index.htm" class="mobile-menu-toggle"><i class="bi bi-list"></i></a>
+                        </li>
+                        <!-- .header-navigation-wrapper -->
+                     </ul>
+                     <ul class="nav mobilebar pull-center justify-content-center right-element-exist">
+                        <li class="header-titles-wrapper">
+                           <div class="header-titles">
+                              <a class="site-link" href="{% url 'index' %}"><img class="img-fluid mobile-logo" src="{% static 'wp-content/uploads/sites/10/2023/08/h-logo-white.png' %}" alt="Explug"></a>
+                           </div>
+                           <!-- .header-titles -->
+                        </li>
+                        <!-- .header-titles-wrapper -->
+                     </ul>
+                     <ul class="nav mobilebar pull-right justify-content-end right-element-exist">
+                        <li class="header-search-wrapper">
+                           <a class="full-search-toggle" href="#"><i class="bi bi-search"></i></a>
+                        </li>
+                     </ul>
+                  </div>
+                  <!-- .container -->
+               </div>
+               <!-- .header-mobilebar --> 	
+            </div>
+            <!-- .sticky-head -->
+         </div>
+         <!-- .sticky-outer -->
+         <header id="site-header" class="site-header header-absolute">
+            <div class="sticky-outer" data-stickyup="0">
+               <div class="sticky-head">
+                  <div class="header-navbar navbar elements-3">
+                     <div class="container-fluid">
+                        <ul class="nav navbar-ul element-left right-element-exist">
+                           <li class="header-titles-wrapper">
+                              <div class="header-titles">
+                                 <a class="site-link" href="{% url 'index' %}"><img class="img-fluid site-logo" src="{% static 'wp-content/uploads/sites/10/2023/08/h-logo-white.png' %}" alt="Explug"></a>
+                                 <a class="site-link sticky-logo-link" href="{% url 'index' %}"><img class="img-fluid sticky-logo" src="{% static 'wp-content/uploads/sites/10/2023/08/h-logo-white.png' %}" alt="Explug"></a>
+                              </div>
+                              <!-- .header-titles -->
+                           </li>
+                           <!-- .header-titles-wrapper -->
+                        </ul>
+                        <ul class="nav navbar-ul pull-center justify-content-center right-element-exist">
+                           <li class="header-navigation-wrapper">
+                              <nav class="primary-menu-wrapper" aria-label="Horizontal">
+                                 <ul class="nav wp-menu primary-menu">
+								 <li>  
+									 <a href="{%  url 'index' %}" aria-current="page">Home </a>
+
+                                    </li>
+									
+                                    <!-- <li id="menu-item-57795" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-57795">
+                                       <a href="#">CargoX</a>
+                                       <ul class="sub-menu">
+                                          <li id="menu-item-57886" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-57886">
+                                             <a href="about-us/index.htm">About Us</a>
+                                             <ul class="sub-menu">
+                                                <li id="menu-item-57834" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57834"><a href="our-history/index.htm">Our History</a></li>
+                                                </ul>
+                                          </li>
+                                          <li id="menu-item-61794" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-61794">
+                                             <a href="our-services/index.htm">Service Grid</a>
+                                             <ul class="sub-menu">
+                                                <li id="menu-item-61795" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-61795"><a href="our-services/index.htm">Main Services</a></li>
+                                                  </ul>
+                                          </li>
+                                          
+                                       </ul>
+                                    </li> -->
+                                    <li id="menu-item-57888" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-57888">
+                                       <a href="our-services/index.htm">latest
+                                       <ul class="sub-menu">
+                                          <li id="menu-item-61787" class="menu-item menu-item-type-post_type menu-item-object-cea-service menu-item-61787"><a href="service/corporate-business/index.htm">Tips & Tricks</a></li>
+										  <li id="menu-item-61787" class="menu-item menu-item-type-post_type menu-item-object-cea-service menu-item-61787"><a href="service/corporate-business/index.htm">News & blogs</a></li>
+                                         </ul>
+                                    </li>
+									<li>  
+										<a href="{%  url 'index' %}" aria-current="page">About us </a>
+   
+									   </li>
+                                  <li>  
+									 <a href="{%  url 'index' %}" aria-current="page">Contact us </a>
+
+                                    </li>
+                                     <!-- <ul class="navbar-nav ms-auto" id="nav" style="display: none;"> -->
+
+                                        
+                    {% if user.is_authenticated %}
+                    {% if user.is_provider %}
+                    <li><a href="{% url 'Provider-Dashboard' %}" >Dashboard</a></li>
+                    {% elif not user.is_provider and not user.is_consumer %}
+                    <li><a href="{% url 'Live-Data' %}" >Live Feed</a></li>
+                    {% else %}
+                    <li><a href="{% url 'Profile' %}" >My account</a></li>
+					<li><a href="{% url 'convert' %}" >Convert</a></li>
+
+                    {% endif %}
+                    <li><a href="{% url 'account_logout' %}" class="login">Log out</a></li>
+                    {% else %}
+                    <li><a href="{% url 'account_login' %}" class="login" >Log in</a></li>
+
+                    <li><a href="{% url 'register' %}" class="signup" >Sign up</a></li>
+					<!-- <li id="menu-item-57888" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-57888">
+						<a href="our-services/index.htm">Services</a>
+						<ul class="sub-menu">
+						   <li id="menu-item-61787" class="menu-item menu-item-type-post_type menu-item-object-cea-service menu-item-61787"><a href="{% url 'account_login' %}">Corporate Business</a></li>
+
+						   <li id="menu-item-61787" class="menu-item menu-item-type-post_type menu-item-object-cea-service menu-item-61787"><a href="{% url 'account_login' %}">Corporate Business</a></li>
+						  </ul>
+					 </li> -->
+                    {% endif %} 
+                                    
+                                   
+                                    <!-- <li id="menu-item-57838" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57838"><a href="contact-us/index.htm">Contact Us</a></li> -->
+                                 </ul>
+                              </nav>
+                              <!-- .primary-menu-wrapper -->
+                           </li>
+                           <!-- .header-navigation-wrapper -->
+                        </ul>
+                        
+                        <ul class="nav navbar-ul pull-right justify-content-end right-element-exist">
+                           <li>				<a class="full-search-toggle" href="#"><i class="bi bi-search"></i></a>
+                           </li>
+                           <li><a href="tel:5284567592" class="h-phone"><i class="bi bi-telephone-forward-fill mr-2"></i></a></li>
+                           <li class="secondary-toggle-wrapper">
+                              <a href="index.htm" class="secondary-menu-toggle explug-toggle"><span></span><span></span><span></span></a>
+                           </li>
+                        </ul>
+                     </div>
+                     <!-- .container -->
+                  </div>
+                  <!-- .header-navbar -->
+               </div>
+               <!-- .sticky-head -->
+            </div>
+            <!-- .sticky-outer -->			
+         </header>
+         {% block body %} {% endblock %}
+       <!-- #site-content -->
+   
+        <div class="full-search-wrapper">
+        <a class="full-search-toggle close" href="#"></a>
+        <form role="search" class="form-inline search-form" action="https://wordpress.zozothemes.com/explug/">
+        <div class="input-group">
+        <input class="form-control" type="text" placeholder="Search" value="" name="s">
+        <span class="input-group-btn">
+        <button class="btn btn-outline-success" type="submit"><span class="bi bi-search"></span></button>
+        </span>
+        </div>
+        </form>
+        </div>
+        <div class="secondary-bar-wrapper from-right">
+        <div class="secondary-bar-inner">
+        <a href="index.htm" class="secondary-menu-toggle explug-toggle"><span></span><span></span><span></span></a>
+        <div class="widget widget_block"><div class="widget-content"><div class="widget text-widget-content mb-0">
+        <div class="widget-content">
+        <a href="index.htm"><img decoding="async" src="{% static 'wp-content/uploads/sites/10/2023/08/ep-logo-dark-footer.png' %}" alt="footer-logo" class="img-fluid pb-1"></a>
+        <div class="text-widget-inner pt-3"><span class="text-widget-content-text">Explug process of planning, implementing and electric, cars, bikes, or trains.</span></div>
+        </div>
+        </div></div></div><div class="widget explug_contact_info_widget"><div class="widget-content"><div class="contact-widget-wrap" data-css="&quot;&quot;"><h3 class="widget-title subheading heading-size-3">Contact Info</h3>			
+        <div class="contact-widget widget-content">
+        <div class="contact-widget-info">
+        <p class="contact-address"><span class="bi bi-geo-alt"></span><span>684 West College St. Sun City, United States America, 064781.</span></p>
+        <p class="contact-phone"><span class="bi bi-headset"></span><span><a href="tel:+(528)456-7592">+(528) 456-7592</a></span></p>
+        <p class="contact-email"><span class="bi bi-envelope"></span><span><a href="mailto:info@explug.com">info@explug.com</a></span></p>
+        </div><!-- .contact-widget-info -->
+        </div>
+        </div><!-- .contact-widget-wrap --></div></div><div class="widget widget_block"><div class="widget-content">
+        <div class="wp-block-cover" style="min-height:390px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-90 has-background-dim" style="background-color:#262626"></span><img decoding="async" class="wp-block-cover__image-background wp-image-56607" alt="" src="wp-content/uploads/sites/10/2023/08/bg-cover-imh.jpg" data-object-fit="cover"><div class="wp-block-cover__inner-container is-layout-flow wp-block-cover-is-layout-flow">
+        <div class="widget-service-contact text-center">
+        <div class="widget-service-icon d-block pt-4 mb-4"><i class="bi bi-headset widget-icon"></i></div>
+        <h4 class="widget-service-title text-white mb-4">Do You Need Any Help?</h4>
+        <h5><a href="tel:+5284567592" class="text-white">+(528) 456-7592</a></h5>
+        <div class="ser-mail mb-5"><a href="mailto:info@example.com" class="d-block text-white">info@example.com</a></div>
+        <div class="widget-service-button"><a href="#" class="d-block font-weight-bold text-white text-uppercase">View More</a></div>
+        </div>
+        </div></div>
+        </div></div>			</div>
+        </div>
+        <div class="mobile-menu-floating">
+        <a href="index.htm" class="mobile-menu-toggle"><i class="close-icon"></i></a>
+        <div class="header-titles">
+        <a class="site-link" href="index.htm"><img class="img-fluid mobile-logo" src="{% static 'wp-content/uploads/sites/10/2023/08/h-logo-white.png' %}" alt="Explug"></a>
+        </div><!-- .header-titles --> 						
+        <nav class="mobile-menu-wrapper">
+        <ul class="wp-menu mobile-menu">
+        <li id="menu-item-62562" class="cus-img-menu menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-57241 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-62562"><a href="index.htm" aria-current="page">Home</a>
+        <ul class="sub-menu">
+        <li id="menu-item-62564" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-57241 current_page_item menu-item-62564"><a href="index.htm" aria-current="page">Home Default</a></li>
+        <li id="menu-item-62565" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62565"><a href="ev-scooter/index.htm">EV Scooter</a></li>
+        <li id="menu-item-62566" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62566"><a href="ev-car-services/index.htm">EV Car Services</a></li>
+        <li id="menu-item-62567" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62567"><a href="home-4/index.htm">Home 4</a></li>
+        <li id="menu-item-62568" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62568"><a href="home-5/index.htm">Home 5</a></li>
+        <li id="menu-item-62569" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62569"><a href="home-6/index.htm">Home 6</a></li>
+        <li id="menu-item-62570" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62570"><a href="home-7/index.htm">Home 7</a></li>
+        <li id="menu-item-62571" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62571"><a href="home-8/index.htm">Home 8</a></li>
+        <li id="menu-item-62572" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62572"><a href="home-9/index.htm">Home 9</a></li>
+        <li id="menu-item-62573" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-62573"><a href="#">Coming Soon</a></li>
+        </ul>
+        </li>
+        <li id="menu-item-62574" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-62574"><a href="#">Pages</a>
+        <ul class="sub-menu">
+        <li id="menu-item-62575" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62575"><a href="about-us/index.htm">About Us</a></li>
+        <li id="menu-item-62576" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62576"><a href="our-history/index.htm">Our History</a></li>
+        <li id="menu-item-62577" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62577"><a href="our-team/index.htm">Our Team</a></li>
+        <li id="menu-item-62578" class="menu-item menu-item-type-post_type menu-item-object-cea-team menu-item-62578"><a href="team/jennifer-winds/index.htm">Team Details</a></li>
+        <li id="menu-item-62579" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62579"><a href="testimonials/index.htm">Testimonials</a></li>
+        <li id="menu-item-62580" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62580"><a href="faq/index.htm">Faq</a></li>
+        <li id="menu-item-62581" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-62581"><a href="our-services/index.htm">Service Grid</a>
+        <ul class="sub-menu">
+        <li id="menu-item-62582" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62582"><a href="our-services/index.htm">Main Services</a></li>
+        <li id="menu-item-62583" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62583"><a href="service-style-1/index.htm">Service Style 1</a></li>
+        <li id="menu-item-62584" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62584"><a href="service-style-2/index.htm">Service Style 2</a></li>
+        </ul>
+        </li>
+        </ul>
+        </li>
+        <li id="menu-item-62585" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-62585"><a href="our-services/index.htm">Services</a>
+        <ul class="sub-menu">
+        <li id="menu-item-62586" class="menu-item menu-item-type-post_type menu-item-object-cea-service menu-item-62586"><a href="service/corporate-business/index.htm">Corporate Business</a></li>
+        <li id="menu-item-62587" class="menu-item menu-item-type-post_type menu-item-object-cea-service menu-item-62587"><a href="service/commercial-systems/index.htm">Commercial Systems</a></li>
+        <li id="menu-item-62588" class="menu-item menu-item-type-post_type menu-item-object-cea-service menu-item-62588"><a href="service/electric-car-sale/index.htm">Electric Car Sale</a></li>
+        <li id="menu-item-62589" class="menu-item menu-item-type-post_type menu-item-object-cea-service menu-item-62589"><a href="service/electric-driving/index.htm">Electric Driving</a></li>
+        <li id="menu-item-62590" class="menu-item menu-item-type-post_type menu-item-object-cea-service menu-item-62590"><a href="service/house-charging/index.htm">House Charging</a></li>
+        <li id="menu-item-62591" class="menu-item menu-item-type-post_type menu-item-object-cea-service menu-item-62591"><a href="service/public-stations/index.htm">Public Stations</a></li>
+        </ul>
+        </li>
+        <li id="menu-item-62592" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-62592"><a href="#">Features</a>
+        <ul class="sub-menu">
+        <li id="menu-item-62593" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-62593"><a href="#">Shortcodes</a>
+        <ul class="sub-menu">
+        <li id="menu-item-62594" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62594"><a href="blogs/index.htm">Blogs</a></li>
+        <li id="menu-item-62595" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62595"><a href="charts/index.htm">Charts</a></li>
+        <li id="menu-item-62596" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62596"><a href="circle-progress/index.htm">Circle Progress</a></li>
+        <li id="menu-item-62597" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62597"><a href="contact-forms/index.htm">Contact Forms</a></li>
+        <li id="menu-item-62598" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62598"><a href="counters/index.htm">Counters</a></li>
+        </ul>
+        </li>
+        <li id="menu-item-62599" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-62599"><a href="#">Shortcodes</a>
+        <ul class="sub-menu">
+        <li id="menu-item-62600" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62600"><a href="day-counter/index.htm">Day Counter</a></li>
+        <li id="menu-item-62601" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62601"><a href="feature-box/index.htm">Feature Box</a></li>
+        <li id="menu-item-62602" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62602"><a href="flipbox/index.htm">Flipbox</a></li>
+        <li id="menu-item-62603" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62603"><a href="google-maps/index.htm">Google Maps</a></li>
+        <li id="menu-item-62604" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62604"><a href="mailchimp/index.htm">Mailchimp</a></li>
+        </ul>
+        </li>
+        <li id="menu-item-62605" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-62605"><a href="#">Shortcodes</a>
+        <ul class="sub-menu">
+        <li id="menu-item-62606" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62606"><a href="modal-popup/index.htm">Modal Popup</a></li>
+        <li id="menu-item-62607" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62607"><a href="popover/index.htm">Popover</a></li>
+        <li id="menu-item-62608" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62608"><a href="progress-bar/index.htm">Progress Bar</a></li>
+        <li id="menu-item-62609" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62609"><a href="service-styles/index.htm">Service Styles</a></li>
+        <li id="menu-item-62610" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62610"><a href="tabs/index.htm">Tabs</a></li>
+        </ul>
+        </li>
+        <li id="menu-item-62611" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-62611"><a href="#">Shortcodes</a>
+        <ul class="sub-menu">
+        <li id="menu-item-62612" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62612"><a href="timeline/index.htm">Timeline</a></li>
+        <li id="menu-item-62613" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62613"><a href="video-popup/index.htm">Video Popup</a></li>
+        <li id="menu-item-62614" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-62614"><a href="#">Unlimited Headers</a></li>
+        <li id="menu-item-62615" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-62615"><a href="#">Unlimited Footers</a></li>
+        </ul>
+        </li>
+        </ul>
+        </li>
+        <li id="menu-item-62616" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-62616"><a href="projects/index.htm">Projects</a>
+        <ul class="sub-menu">
+        <li id="menu-item-62617" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-62617"><a href="projects-grid-2/index.htm">Projects Grid</a>
+        <ul class="sub-menu">
+        <li id="menu-item-62618" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62618"><a href="projects-grid-2/index.htm">Projects Grid 2</a></li>
+        <li id="menu-item-62619" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62619"><a href="projects/index.htm">Projects Grid 3</a></li>
+        <li id="menu-item-62620" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62620"><a href="projects-grid-4/index.htm">Projects Grid 4</a></li>
+        </ul>
+        </li>
+        <li id="menu-item-62621" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-62621"><a href="projects-masonry/index.htm">Projects Masonry</a>
+        <ul class="sub-menu">
+        <li id="menu-item-62622" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62622"><a href="masonry-classic/index.htm">Masonry Classic</a></li>
+        <li id="menu-item-62623" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62623"><a href="masonry-classic-pro/index.htm">Masonry Classic Pro</a></li>
+        <li id="menu-item-62624" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62624"><a href="masonry-modern/index.htm">Masonry Modern</a></li>
+        </ul>
+        </li>
+        <li id="menu-item-62625" class="menu-item menu-item-type-post_type menu-item-object-cea-portfolio menu-item-62625"><a href="portfolio/electric-application/index.htm">Project Details</a></li>
+        </ul>
+        </li>
+        <li id="menu-item-62626" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-62626"><a href="blog/index.htm">Blog</a>
+        <ul class="sub-menu">
+        <li id="menu-item-62627" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62627"><a href="blog/index.htm">Blog Standard</a></li>
+        <li id="menu-item-62628" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-62628"><a href="blog/index.htm">Blog Grid</a>
+        <ul class="sub-menu">
+        <li id="menu-item-62629" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62629"><a href="2-columns/index.htm">2 Columns</a></li>
+        <li id="menu-item-62630" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62630"><a href="2-columns-sidebar/index.htm">2 Columns + Sidebar</a></li>
+        <li id="menu-item-62631" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62631"><a href="3-columns/index.htm">3 Columns</a></li>
+        <li id="menu-item-62632" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62632"><a href="4-columns-fullwidth/index.htm">4 Columns Fullwidth</a></li>
+        </ul>
+        </li>
+        <li id="menu-item-62633" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-62633"><a href="get-the-hybrid-watches-for-your-electric-car/index.htm">Blog Details</a></li>
+        </ul>
+        </li>
+        <li id="menu-item-62634" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62634"><a href="contact-us/index.htm">Contact Us</a></li>
+        </ul>
+        </nav><!-- .mobile-menu-wrapper --> 					<form role="search" class="form-inline search-form" action="https://wordpress.zozothemes.com/explug/">
+        <div class="input-group">
+        <input class="form-control" type="text" placeholder="Search" value="" name="s">
+        <span class="input-group-btn">
+        <button class="btn btn-outline-success" type="submit"><span class="bi bi-search"></span></button>
+        </span>
+        </div>
+        </form>
+        </div>
+        <!-- .mobile-menu-floating -->		<a href="index.htm" class="back-to-top" id="back-to-top"><i class="bi bi-caret-up-fill"></i></a>
+     </div>
+     <!-- .explug-body-inner -->
+
+     <link rel='stylesheet' id='magnific-popup-css'
+		href="{% static 'wp-content/plugins/classic-elementor-addons-pro/assets/css/magnific-popup.min.css' %}" media='all'>
+	<style id='core-block-supports-inline-css'>
+		.wp-container-4.wp-container-4 {
+			flex-wrap: nowrap;
+		}
+	</style>
+	<link rel='stylesheet' id='e-animations-css'
+		href="{% static 'wp-content/plugins/elementor/assets/lib/animations/animations.min.css' %}" media='all'>
+	<link data-minify="1" rel='stylesheet' id='rs-plugin-settings-css'
+		href="{% static 'wp-content/cache/min/10/explug/wp-content/plugins/revslider/public/assets/css/rs6.css' %}" media='all'>
+	<style id='rs-plugin-settings-inline-css'>
+		.slide-text-transparent {
+			color: rgba(255, 255, 255, 1) !important;
+			text-shadow: -1px -1px 0 #e8eaed, 1px -1px 0 #e8eaed, -1px 1px 0 #e8eaed, 1px 1px 0 #e8eaed
+		}
+
+		.slide-fbox-title:hover,
+		.slide-fbox-number:hover {
+			color: #d4d4d4 !important
+		}
+
+		.slide-fbox-title:hover,
+		.slide-fbox-title,
+		.slide-fbox-number:hover,
+		.slide-fbox-number {
+			transition: all .3s
+		}
+
+		.rs-layer.Concept-Content a,
+		.rs-layer.Concept-Content a:visited {
+			color: #fff !important;
+			border-bottom: 1px solid #fff !important;
+			font-weight: 700 !important
+		}
+
+		span.spl-slash {
+			padding-left: 19px;
+			padding-right: 19px
+		}
+
+		span.spl-slash {
+			position: relative
+		}
+
+		.sl-link {
+			transition: all .3s
+		}
+
+		.sl-link:hover {
+			opacity: .8 !important;
+			transition: all .3s
+		}
+
+		span.spl-slash:before {
+			content: "";
+			width: 3px;
+			height: 23px;
+			background: #ff3e55;
+			position: absolute;
+			top: 6px;
+			left: 5px;
+			transform: rotate(-20deg)
+		}
+
+		span.spl-slash:after {
+			content: "";
+			width: 3px;
+			height: 23px;
+			background: #ff3e55;
+			position: absolute;
+			top: 6px;
+			right: 5px;
+			transform: rotate(-20deg)
+		}
+
+		.rs-layer.Concept-Content a:hover {
+			border-bottom: 1px solid transparent !important
+		}
+
+		.ver-charge {
+			position: relative
+		}
+
+		.ver-charge:before {
+			content: "";
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			bottom: 0px;
+			border-radius: 3px;
+			transition: all .3s;
+			animation: ver-charge-ani 10s infinite;
+			background: #84c951
+		}
+
+		@keyframes ver-charge-ani {
+			0% {
+				height: 0
+			}
+
+			100% {
+				height: 100%
+			}
+		}
+
+		.rs-layer.Concept-Content-Dark a,
+		.rs-layer.Concept-Content-Dark a:visited {
+			color: #000 !important;
+			border-bottom: 1px solid #000 !important;
+			font-weight: 700 !important
+		}
+
+		.rs-layer.Concept-Content-Dark a:hover {
+			border-bottom: 1px solid transparent !important
+		}
+
+		.res-slide-btn i {
+			font-size: 14px !important;
+			font-weight: 600 !important;
+			margin-left: 5px !important;
+			vertical-align: -1px !important
+		}
+
+		.tp-leftarrow.tparrows {
+			border-top-left-radius: 10px;
+			border-bottom-left-radius: 10px
+		}
+
+		.tp-rightarrow.tparrows {
+			border-top-right-radius: 10px;
+			border-bottom-right-radius: 10px
+		}
+
+		rs-layer.slide-fbox.rs-layer {
+			background: rgb(255 255 255 / 10%) !important;
+			box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%) !important;
+			backdrop-filter: blur(6px);
+			-webkit-backdrop-filter: blur(6px);
+			transition: all .3s ease-in-out 0s;
+			-webkit-transition: all .3s ease-in-out 0s;
+			-moz-transition: all .3s ease-in-out 0s;
+			-ms-transition: all .3s ease-in-out 0s;
+			-o-transition: all .3s ease-in-out 0s
+		}
+
+		rs-layer.slide-fbox.rs-layer:hover {
+			background: rgb(255 255 255 / 4%) !important;
+			transition: all .3s ease-in-out 0s;
+			-webkit-transition: all .3s ease-in-out 0s;
+			-moz-transition: all .3s ease-in-out 0s;
+			-ms-transition: all .3s ease-in-out 0s;
+			-o-transition: all .3s ease-in-out 0s
+		}
+
+		@media only screen and (max-width:1024px) {
+			span.spl-slash {
+				padding-left: 0 !important;
+				padding-right: 0 !important
+			}
+
+			span.spl-slash:before {
+				content: unset
+			}
+
+			span.spl-slash:after {
+				content: unset
+			}
+		}
+
+		@media only screen and (max-width:730px) {
+			.charety-slide-txt {
+				font-size: 16px !important;
+				line-height: 30px !important
+			}
+
+			rs-mask-wrap .res-slide-btn {
+				margin-top: 0px
+			}
+		}
+
+		@media only screen and (max-width:640px) {
+			.charety-slide-txt {
+				font-size: 16px !important;
+				line-height: 30px !important;
+				width: 497px !important
+			}
+
+			rs-mask-wrap .res-slide-btn {
+				margin-top: 20px !important;
+				padding: 9px 25px !important;
+				font-size: 13px !important
+			}
+		}
+
+		@media only screen and (max-width:603px) {
+			rs-mask-wrap .res-slide-btn {
+				margin-top: 35px !important
+			}
+		}
+
+		@media only screen and (max-width:575px) {
+			rs-mask-wrap .res-slide-btn {
+				padding: 9px 25px !important
+			}
+		}
+
+		@media only screen and (max-width:565px) {
+			rs-mask-wrap .res-slide-btn {
+				margin-top: 35px !important
+			}
+		}
+
+		@media only screen and (max-width:525px) {
+			.charety-slide-txt {
+				line-height: 30px !important
+			}
+		}
+
+		@media only screen and (max-width:506px) {
+			.charety-slide-txt {
+				line-height: 28px !important;
+				font-size: 15px !important
+			}
+		}
+
+		@media only screen and (max-width:480px) {
+			.charety-slide-txt {
+				font-size: 15px !important;
+				line-height: 28px !important
+			}
+
+			rs-mask-wrap .res-slide-btn {
+				margin-top: 15px !important
+			}
+		}
+
+		@media only screen and (max-width:479px) {
+			rs-mask-wrap .res-slide-btn {
+				margin-top: 5px !important
+			}
+
+			.charety-slide-txt {
+				width: 387px !important
+			}
+		}
+
+		@media only screen and (max-width:472px) {
+			.charety-slide-txt {
+				font-size: 15px !important;
+				line-height: 28px !important
+			}
+
+			.charety-slide-txt {
+				width: 382px !important
+			}
+		}
+
+		@media only screen and (max-width:426px) {
+			.charety-slide-txt {
+				font-size: 15px !important;
+				line-height: 28px !important;
+				height: 100px !important;
+				width: 335px !important
+			}
+
+			rs-mask-wrap .res-slide-btn {
+				margin-top: 15px !important
+			}
+		}
+
+		@media only screen and (max-width:412px) {
+			rs-mask-wrap .res-slide-btn {
+				margin-top: 15px !important
+			}
+		}
+
+		@media only screen and (max-width:388px) {
+			rs-mask-wrap .res-slide-btn {
+				margin-top: 15px !important
+			}
+
+			.charety-slide-txt {
+				font-size: 16px !important;
+				line-height: 30px !important
+			}
+		}
+
+		@media only screen and (max-width:359px) {
+			.charety-slide-txt {
+				font-size: 15px !important;
+				line-height: 28px !important;
+				width: 315px !important
+			}
+		}
+
+		@media only screen and (max-width:332px) {
+			.charety-slide-txt {
+				font-size: 15px !important;
+				line-height: 28px !important;
+				height: 100px !important
+			}
+
+			rs-mask-wrap .res-slide-btn {
+				margin-top: 20px !important
+			}
+		}
+	</style>
+	<script id='zozo-select2-js-extra'>
+		var astRules = { "ast_lang": "", "please_enter": "Please enter", "please_delete": "Please delete", "more_char": "or more characters", "character": "character", "loading": "Loading more results\u2026", "only_select": "You can only select", "item": "item", "char_s": "s", "no_result": "No results found", "searching": "Searching\u2026", "not_loader": "The results could not be loaded.", "search": "Search pages \/ post \/ categories", "ajax_nonce": "e4bda23189" };
+	</script>
+
+
+
+
+
+	<script id='contact-form-7-js-extra'>
+		var wpcf7 = { "api": { "root": "https:\/\/wordpress.zozothemes.com\/explug\/wp-json\/", "namespace": "contact-form-7\/v1" }, "cached": "1" };
+	</script>
+
+
+
+
+	<script id='wc-add-to-cart-js-extra'>
+		var wc_add_to_cart_params = { "ajax_url": "\/explug\/wp-admin\/admin-ajax.php", "wc_ajax_url": "\/explug\/?wc-ajax=%%endpoint%%", "i18n_view_cart": "View cart", "cart_url": "https:\/\/wordpress.zozothemes.com\/explug\/cart\/", "is_cart": "", "cart_redirect_after_add": "no" };
+	</script>
+
+
+	<script id='woocommerce-js-extra'>
+		var woocommerce_params = { "ajax_url": "\/explug\/wp-admin\/admin-ajax.php", "wc_ajax_url": "\/explug\/?wc-ajax=%%endpoint%%" };
+	</script>
+
+	<script id="rocket-browser-checker-js-after">
+		"use strict"; var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || !1, descriptor.configurable = !0, "value" in descriptor && (descriptor.writable = !0), Object.defineProperty(target, descriptor.key, descriptor) } } return function (Constructor, protoProps, staticProps) { return protoProps && defineProperties(Constructor.prototype, protoProps), staticProps && defineProperties(Constructor, staticProps), Constructor } }(); function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) throw new TypeError("Cannot call a class as a function") } var RocketBrowserCompatibilityChecker = function () { function RocketBrowserCompatibilityChecker(options) { _classCallCheck(this, RocketBrowserCompatibilityChecker), this.passiveSupported = !1, this._checkPassiveOption(this), this.options = !!this.passiveSupported && options } return _createClass(RocketBrowserCompatibilityChecker, [{ key: "_checkPassiveOption", value: function (self) { try { var options = { get passive() { return !(self.passiveSupported = !0) } }; window.addEventListener("test", null, options), window.removeEventListener("test", null, options) } catch (err) { self.passiveSupported = !1 } } }, { key: "initRequestIdleCallback", value: function () { !1 in window && (window.requestIdleCallback = function (cb) { var start = Date.now(); return setTimeout(function () { cb({ didTimeout: !1, timeRemaining: function () { return Math.max(0, 50 - (Date.now() - start)) } }) }, 1) }), !1 in window && (window.cancelIdleCallback = function (id) { return clearTimeout(id) }) } }, { key: "isDataSaverModeOn", value: function () { return "connection" in navigator && !0 === navigator.connection.saveData } }, { key: "supportsLinkPrefetch", value: function () { var elem = document.createElement("link"); return elem.relList && elem.relList.supports && elem.relList.supports("prefetch") && window.IntersectionObserver && "isIntersecting" in IntersectionObserverEntry.prototype } }, { key: "isSlowConnection", value: function () { return "connection" in navigator && "effectiveType" in navigator.connection && ("2g" === navigator.connection.effectiveType || "slow-2g" === navigator.connection.effectiveType) } }]), RocketBrowserCompatibilityChecker }();
+	</script>
+	<script id='rocket-preload-links-js-extra'>
+		var RocketPreloadLinksConfig = { "excludeUris": "\/(?:.+\/)?feed(?:\/(?:.+\/?)?)?$|\/(?:.+\/)?embed\/|\/explug\/checkout\/??(.*)|\/explug\/cart\/?|\/explug\/my-account\/??(.*)|\/explug\/wc-api\/v(.*)|http:\/\/(\/%5B\/%5D+)?\/(index.php\/)?(.*)wp-json(\/.*|$)|\/refer\/|\/go\/|\/recommend\/|\/recommends\/", "usesTrailingSlash": "1", "imageExt": "jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php", "fileExt": "jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm", "siteUrl": "https:\/\/wordpress.zozothemes.com\/explug", "onHoverDelay": "100", "rateThrottle": "3" };
+	</script>
+	<script id="rocket-preload-links-js-after">
+		(function () {
+			"use strict"; var r = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (e) { return typeof e } : function (e) { return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e }, e = function () { function i(e, t) { for (var n = 0; n < t.length; n++) { var i = t[n]; i.enumerable = i.enumerable || !1, i.configurable = !0, "value" in i && (i.writable = !0), Object.defineProperty(e, i.key, i) } } return function (e, t, n) { return t && i(e.prototype, t), n && i(e, n), e } }(); function i(e, t) { if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function") } var t = function () { function n(e, t) { i(this, n), this.browser = e, this.config = t, this.options = this.browser.options, this.prefetched = new Set, this.eventTime = null, this.threshold = 1111, this.numOnHover = 0 } return e(n, [{ key: "init", value: function () { !this.browser.supportsLinkPrefetch() || this.browser.isDataSaverModeOn() || this.browser.isSlowConnection() || (this.regex = { excludeUris: RegExp(this.config.excludeUris, "i"), images: RegExp(".(" + this.config.imageExt + ")$", "i"), fileExt: RegExp(".(" + this.config.fileExt + ")$", "i") }, this._initListeners(this)) } }, { key: "_initListeners", value: function (e) { -1 < this.config.onHoverDelay && document.addEventListener("mouseover", e.listener.bind(e), e.listenerOptions), document.addEventListener("mousedown", e.listener.bind(e), e.listenerOptions), document.addEventListener("touchstart", e.listener.bind(e), e.listenerOptions) } }, { key: "listener", value: function (e) { var t = e.target.closest("a"), n = this._prepareUrl(t); if (null !== n) switch (e.type) { case "mousedown": case "touchstart": this._addPrefetchLink(n); break; case "mouseover": this._earlyPrefetch(t, n, "mouseout") } } }, { key: "_earlyPrefetch", value: function (t, e, n) { var i = this, r = setTimeout(function () { if (r = null, 0 === i.numOnHover) setTimeout(function () { return i.numOnHover = 0 }, 1e3); else if (i.numOnHover > i.config.rateThrottle) return; i.numOnHover++, i._addPrefetchLink(e) }, this.config.onHoverDelay); t.addEventListener(n, function e() { t.removeEventListener(n, e, { passive: !0 }), null !== r && (clearTimeout(r), r = null) }, { passive: !0 }) } }, { key: "_addPrefetchLink", value: function (i) { return this.prefetched.add(i.href), new Promise(function (e, t) { var n = document.createElement("link"); n.rel = "prefetch", n.href = i.href, n.onload = e, n.onerror = t, document.head.appendChild(n) }).catch(function () { }) } }, { key: "_prepareUrl", value: function (e) { if (null === e || "object" !== (void 0 === e ? "undefined" : r(e)) || !1 in e || -1 === ["http:", "https:"].indexOf(e.protocol)) return null; var t = e.href.substring(0, this.config.siteUrl.length), n = this._getPathname(e.href, t), i = { original: e.href, protocol: e.protocol, origin: t, pathname: n, href: t + n }; return this._isLinkOk(i) ? i : null } }, { key: "_getPathname", value: function (e, t) { var n = t ? e.substring(this.config.siteUrl.length) : e; return n.startsWith("/") || (n = "/" + n), this._shouldAddTrailingSlash(n) ? n + "/" : n } }, { key: "_shouldAddTrailingSlash", value: function (e) { return this.config.usesTrailingSlash && !e.endsWith("/") && !this.regex.fileExt.test(e) } }, { key: "_isLinkOk", value: function (e) { return null !== e && "object" === (void 0 === e ? "undefined" : r(e)) && (!this.prefetched.has(e.href) && e.origin === this.config.siteUrl && -1 === e.href.indexOf("?") && -1 === e.href.indexOf("#") && !this.regex.excludeUris.test(e.href) && !this.regex.images.test(e.href)) } }], [{ key: "run", value: function () { "undefined" != typeof RocketPreloadLinksConfig && new n(new RocketBrowserCompatibilityChecker({ capture: !0, passive: !0 }), RocketPreloadLinksConfig).init() } }]), n }(); t.run();
+		}());
+	</script>
+
+	<script id='cea-custom-front-js-extra'>
+		var cea_ajax_var = { "ajax_url": "https:\/\/wordpress.zozothemes.com\/explug\/wp-admin\/admin-ajax.php" };
+	</script>
+
+
+
+
+
+
+
+
+
+
+	<script id="elementor-frontend-js-before">
+		var elementorFrontendConfig = { "environmentMode": { "edit": false, "wpPreview": false, "isScriptDebug": false }, "i18n": { "shareOnFacebook": "Share on Facebook", "shareOnTwitter": "Share on Twitter", "pinIt": "Pin it", "download": "Download", "downloadImage": "Download image", "fullscreen": "Fullscreen", "zoom": "Zoom", "share": "Share", "playVideo": "Play Video", "previous": "Previous", "next": "Next", "close": "Close", "a11yCarouselWrapperAriaLabel": "Carousel | Horizontal scrolling: Arrow Left & Right", "a11yCarouselPrevSlideMessage": "Previous slide", "a11yCarouselNextSlideMessage": "Next slide", "a11yCarouselFirstSlideMessage": "This is the first slide", "a11yCarouselLastSlideMessage": "This is the last slide", "a11yCarouselPaginationBulletMessage": "Go to slide" }, "is_rtl": false, "breakpoints": { "xs": 0, "sm": 480, "md": 768, "lg": 1025, "xl": 1440, "xxl": 1600 }, "responsive": { "breakpoints": { "mobile": { "label": "Mobile Portrait", "value": 767, "default_value": 767, "direction": "max", "is_enabled": true }, "mobile_extra": { "label": "Mobile Landscape", "value": 880, "default_value": 880, "direction": "max", "is_enabled": false }, "tablet": { "label": "Tablet Portrait", "value": 1024, "default_value": 1024, "direction": "max", "is_enabled": true }, "tablet_extra": { "label": "Tablet Landscape", "value": 1200, "default_value": 1200, "direction": "max", "is_enabled": false }, "laptop": { "label": "Laptop", "value": 1366, "default_value": 1366, "direction": "max", "is_enabled": false }, "widescreen": { "label": "Widescreen", "value": 2400, "default_value": 2400, "direction": "min", "is_enabled": false } } }, "version": "3.16.5", "is_static": false, "experimentalFeatures": { "e_dom_optimization": true, "e_optimized_assets_loading": true, "e_optimized_css_loading": true, "additional_custom_breakpoints": true, "e_swiper_latest": true, "landing-pages": true, "e_global_styleguide": true }, "urls": { "assets": "https:\/\/wordpress.zozothemes.com\/explug\/wp-content\/plugins\/elementor\/assets\/" }, "swiperClass": "swiper", "settings": { "page": [], "editorPreferences": [] }, "kit": { "active_breakpoints": ["viewport_mobile", "viewport_tablet"], "global_image_lightbox": "yes", "lightbox_enable_counter": "yes", "lightbox_enable_fullscreen": "yes", "lightbox_enable_zoom": "yes", "lightbox_enable_share": "yes", "lightbox_title_src": "title", "lightbox_description_src": "description" }, "post": { "id": 57241, "title": "Explug%20%E2%80%93%20EV%20Car%20%26%20Charging%20WordPress%20Theme", "excerpt": "", "featuredImage": false } };
+	</script>
+
+
+	<script src="{% static 'wp-content/cache/min/10/89e736852a7db5609995fd28ff210c3f.js' %}" data-minify="1"></script>
+</body>
+
+</html>

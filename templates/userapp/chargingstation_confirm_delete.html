@@ -1,0 +1,109 @@
+{% extends 'userapp/layout.html' %}
+{% load static %}
+{% block head %}
+{% load crispy_forms_tags %}
+<link rel="stylesheet" href="{% static 'userapp/rs.css'%}">
+<style>
+    .container {
+        height: 55vh;
+    }
+
+    .container .confirm {
+        background-color: #f4f4f4;
+        margin: 50px auto;
+        width: 500px;
+        -webkit-box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+        box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+        -webkit-animation-name: modalopen;
+        animation-name: modalopen;
+        -webkit-animation-duration: 0.5s;
+        animation-duration: 0.5s;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+    @media only screen and (max-width:520px) {
+        .container {
+            height: 60vh;
+        }
+
+        .container .confirm {
+            width: 90%;
+        }
+
+        .container .confirm .confirm-body button {
+            font-size: 1.8rem !important;
+        }
+
+        .container .confirm .confirm-body a {
+            font-size: 1.8rem !important;
+        }
+    }
+
+    .container .confirm .confirm-head {
+        border-bottom: 0.5px solid #ccc;
+        background: #428bca;
+        padding: 15px;
+        font-size: 2.2rem;
+        color: #fff;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+    .container .confirm .confirm-body {
+        height: 100%;
+        padding: 20px 20px 8px 20px;
+    }
+
+    .container .confirm .confirm-body h4 {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+    .container .confirm .confirm-body button {
+        font-size: 2.2rem;
+        font-weight: 500;
+        padding: 8px 20px;
+        color: white;
+        border-radius: 5px;
+        margin: 2rem 0.5rem 0.5rem 2rem;
+        background-color: #cc3131;
+    }
+
+    .container .confirm .confirm-body a {
+        text-decoration: none;
+        font-size: 2.2rem;
+        font-weight: 500;
+        padding: 8px 20px;
+        color: white;
+        border-radius: 5px;
+        margin: 2rem 0.5rem 0.5rem 2rem;
+        background-color: #0DBA47;
+    }
+
+    @media only screen and (max-width: 515px) {
+        .modal .modal-content {
+            width: 100vw;
+        }
+    }
+</style>
+<title></title>
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <div class="confirm">
+        <div class="confirm-head">
+            <h3>Delete Charging Station</h3>
+        </div>
+        <div class="confirm-body">
+            <form method="POST">
+                {% csrf_token %}
+                <h4>Are You Sure you want to Delete Your Charging Station</h4>
+                <button type="submit">Yes, Delete</button>
+                <a href="{% url 'Provider-Dashboard' %}">Cancel</a>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,130 @@
+
+
+
+main .maintain-man {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border: 1px solid #535353;
+  border-radius: 10px;
+  width: 800px;
+  margin: 30px auto;
+  padding: 30px;
+  -webkit-box-shadow: 0 0 5px #535353;
+          box-shadow: 0 0 5px #535353;
+}
+
+main .maintain-man h1 {
+  text-align: center;
+}
+
+main .maintain-man .location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0px;
+}
+
+main .maintain-man .location input {
+  height: 35px;
+  width: 180px;
+  border-radius: 5px;
+}
+
+main .maintain-man .location span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 5px;
+  padding: 7.5px;
+  background-color: white;
+  border-radius: 5px;
+  font-size: 1.6rem;
+}
+
+main .maintain-man .location span i {
+  margin-left: 5px;
+}
+
+main .maintain-man h3 {
+  font-size: 2rem;
+  color: #3a3a3a;
+}
+
+main .maintain-man .maintain-table .table {
+  margin: 20px auto;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+main .maintain-man .maintain-table td,
+main .maintain-man .maintain-table th {
+  padding: 12px 15px;
+  border: 1px solid #3a3a3a;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+main .maintain-man .maintain-table th {
+  background-color: #20AAAA;
+  color: black;
+}
+
+main .maintain-man .maintain-table tbody tr:nth-child(even) {
+  background-color: #dadada;
+}
+
+@media (max-width: 800px) {
+  main .maintain-man {
+    width: 90vw;
+  }
+}
+
+@media (max-width: 600px) {
+  main .maintain-man {
+    width: 90vw;
+  }
+  main .maintain-man .maintain-table .table thead {
+    display: none;
+  }
+  main .maintain-man .maintain-table .table tbody,
+  main .maintain-man .maintain-table .table tr,
+  main .maintain-man .maintain-table .table td {
+    display: block;
+    width: 100%;
+  }
+  main .maintain-man .maintain-table .table tr {
+    margin-bottom: 15px;
+  }
+  main .maintain-man .maintain-table .table td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+  }
+  main .maintain-man .maintain-table .table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 15px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: left;
+  }
+}
+

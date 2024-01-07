@@ -1,0 +1,90 @@
+{% extends "userapp/layout.html" %}
+{% load static %}
+{% block head %}
+<title>EverythingEV</title>
+<link rel="stylesheet" type="text/css" href="{%  static 'userapp/sass/charge_pooling.css' %}">
+<style>
+  .fas {
+    font-family: 'FontAwesome' !important;
+  }
+</style>
+{% endblock head %}
+{% block body %}
+
+<main>
+  {%if consumer == 1 %}
+  <a href="{%url 'chargepoolingform'%}"><button style="padding: 10px;">Be an charge Pooler</button></a>
+  {%endif%}
+  <div class="chargePooling">
+    <h1>Charge Pooling</h1>
+    <div class="location">
+      <input class="form-control" id="myInput" type="text" placeholder="Enter place to search">
+      <span>Location<i class="fa fa-compass"></i></span>
+    </div>
+    <h3>Available Chargers:</h3>
+    <div class="chargers_table">
+      <table class="table" id="table01" style="display: none;">
+        <thead>
+          <th>Where</th>
+          <th>Contact</th>
+          <th>Normal Charger</th>
+          <th>Fast Charger</th>
+          <th>Cost per Kwh</th>
+        </thead>
+        <tbody id="myTable">
+          {% for chargepooler in chargepoolers %}
+          <tr>
+            <td data-label="Name">{{ chargepooler.local_area|title }}, {{ chargepooler.city|title }}</td>
+            <td data-label="Phone">{{ chargepooler.ph_no }}</td>
+            <td data-label="Slow Ports">{% if chargepooler.normal_port %}<i class="fas fa-check"></i>
+              {% else %}<i class="fas fa-times"></i>{% endif%}</td>
+            <td data-label="Fast Port">{% if chargepooler.fast_port %}<i class="fas fa-check"></i>
+              {% else %}<i class="fas fa-times"></i> {% endif%}</td>
+            <td data-label="Cost">{{ chargepooler.cost }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</main>
+
+{% endblock body %}
+
+{% block script %}
+<script>
+  $(document).ready(function () {
+
+    $("#myInput").on("keyup", function () {
+      if ($(this).val().length == 0)
+        $("#table01").hide();
+      else {
+        $("#table01").show();
+        var value = $(this).val().toLowerCase();
+        $("#myTable tr").filter(function () {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+      }
+    });
+  });
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $('.menu-toggle').click(function () {
+      $('.menu-toggle').toggleClass('active');
+      $('nav').toggleClass('active');
+    })
+  })
+</script>
+<script>
+  $(document).ready(function () {
+    $('.menu-toggle').click(function () {
+      $('.menu-toggle').toggleClass('active');
+      $('nav').toggleClass('active');
+    })
+  })
+</script>
+{% endblock script %}
