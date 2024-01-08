@@ -465,136 +465,53 @@
         </div></div>
         </div></div>			</div>
         </div>
-        <div class="mobile-menu-floating">
-        <a href="index.htm" class="mobile-menu-toggle"><i class="close-icon"></i></a>
-        <div class="header-titles">
-        <a class="site-link" href="index.htm"><img class="img-fluid mobile-logo" src="{% static 'wp-content/uploads/sites/10/2023/08/h-logo-white.png' %}" alt="Explug"></a>
-        </div><!-- .header-titles --> 						
-        <nav class="mobile-menu-wrapper">
-        <ul class="wp-menu mobile-menu">
-        <li id="menu-item-62562" class="cus-img-menu menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-57241 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-62562"><a href="index.htm" aria-current="page">Home</a>
-        <ul class="sub-menu">
-        <li id="menu-item-62564" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-57241 current_page_item menu-item-62564"><a href="index.htm" aria-current="page">Home Default</a></li>
-        <li id="menu-item-62565" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62565"><a href="ev-scooter/index.htm">EV Scooter</a></li>
-        <li id="menu-item-62566" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62566"><a href="ev-car-services/index.htm">EV Car Services</a></li>
-        <li id="menu-item-62567" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62567"><a href="home-4/index.htm">Home 4</a></li>
-        <li id="menu-item-62568" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62568"><a href="home-5/index.htm">Home 5</a></li>
-        <li id="menu-item-62569" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62569"><a href="home-6/index.htm">Home 6</a></li>
-        <li id="menu-item-62570" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62570"><a href="home-7/index.htm">Home 7</a></li>
-        <li id="menu-item-62571" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62571"><a href="home-8/index.htm">Home 8</a></li>
-        <li id="menu-item-62572" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62572"><a href="home-9/index.htm">Home 9</a></li>
-        <li id="menu-item-62573" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-62573"><a href="#">Coming Soon</a></li>
+      
+		<div class="mobile-menu-floating">
+			<a href="{% url 'index' %}" class="mobile-menu-toggle"><i class="close-icon"></i></a>
+			<div class="header-titles">
+			<a class="site-link" href="{% url 'index' %}"><img class="img-fluid mobile-logo" src="{% static 'wp-content/uploads/sites/10/2023/08/h-logo-white.png' %}" alt="Explug"></a>
+			</div><!-- .header-titles --> 						
+			<nav class="mobile-menu-wrapper">
+			<ul class="wp-menu mobile-menu">
+			<li id="menu-item-62562" class="cus-img-menu menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-57241 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-62562"><a href="{% url 'index' %}" aria-current="page">Home</a>
+	  
+			</li>
+			<li id="menu-item-62574" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-62574"><a href="#">Latest</a>
+			<ul class="sub-menu">
+			<li id="menu-item-62575" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62575"><a href="about-us/index.htm">Tips & Tricks</a></li>
+			<li id="menu-item-62576" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62576"><a href="our-history/index.htm">News & blogs</a></li>
+			</ul>
+			</li>
+				<li><a href="{%  url 'index' %}" aria-current="page">About us </a></li>				  
+				<li> <a href="{%  url 'index' %}" aria-current="page">Contact us </a> </li>
+				{% if user.is_authenticated %}
+				{% if user.is_provider %}
+				<li><a href="{% url 'Provider-Dashboard' %}" >Dashboard</a></li>
+				{% elif not user.is_provider and not user.is_consumer %}
+				<li><a href="{% url 'Live-Data' %}" >Live Feed</a></li>
+				{% else %}
+				<li><a href="{% url 'Profile' %}" >My account</a></li>
+				<li><a href="{% url 'convert' %}" >Convert</a></li>
+
+				{% endif %}
+				<li><a href="{% url 'account_logout' %}" class="login">Log out</a></li>
+				{% else %}
+				<li><a href="{% url 'account_login' %}" class="login" >Log in</a></li>
+
+				<li><a href="{% url 'register' %}" class="signup" >Sign up</a></li>
+		
+				{% endif %} 
+
         </ul>
-        </li>
-        <li id="menu-item-62574" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-62574"><a href="#">Pages</a>
-        <ul class="sub-menu">
-        <li id="menu-item-62575" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62575"><a href="about-us/index.htm">About Us</a></li>
-        <li id="menu-item-62576" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62576"><a href="our-history/index.htm">Our History</a></li>
-        <li id="menu-item-62577" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62577"><a href="our-team/index.htm">Our Team</a></li>
-        <li id="menu-item-62578" class="menu-item menu-item-type-post_type menu-item-object-cea-team menu-item-62578"><a href="team/jennifer-winds/index.htm">Team Details</a></li>
-        <li id="menu-item-62579" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62579"><a href="testimonials/index.htm">Testimonials</a></li>
-        <li id="menu-item-62580" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62580"><a href="faq/index.htm">Faq</a></li>
-        <li id="menu-item-62581" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-62581"><a href="our-services/index.htm">Service Grid</a>
-        <ul class="sub-menu">
-        <li id="menu-item-62582" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62582"><a href="our-services/index.htm">Main Services</a></li>
-        <li id="menu-item-62583" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62583"><a href="service-style-1/index.htm">Service Style 1</a></li>
-        <li id="menu-item-62584" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62584"><a href="service-style-2/index.htm">Service Style 2</a></li>
-        </ul>
-        </li>
-        </ul>
-        </li>
-        <li id="menu-item-62585" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-62585"><a href="our-services/index.htm">Services</a>
-        <ul class="sub-menu">
-        <li id="menu-item-62586" class="menu-item menu-item-type-post_type menu-item-object-cea-service menu-item-62586"><a href="service/corporate-business/index.htm">Corporate Business</a></li>
-        <li id="menu-item-62587" class="menu-item menu-item-type-post_type menu-item-object-cea-service menu-item-62587"><a href="service/commercial-systems/index.htm">Commercial Systems</a></li>
-        <li id="menu-item-62588" class="menu-item menu-item-type-post_type menu-item-object-cea-service menu-item-62588"><a href="service/electric-car-sale/index.htm">Electric Car Sale</a></li>
-        <li id="menu-item-62589" class="menu-item menu-item-type-post_type menu-item-object-cea-service menu-item-62589"><a href="service/electric-driving/index.htm">Electric Driving</a></li>
-        <li id="menu-item-62590" class="menu-item menu-item-type-post_type menu-item-object-cea-service menu-item-62590"><a href="service/house-charging/index.htm">House Charging</a></li>
-        <li id="menu-item-62591" class="menu-item menu-item-type-post_type menu-item-object-cea-service menu-item-62591"><a href="service/public-stations/index.htm">Public Stations</a></li>
-        </ul>
-        </li>
-        <li id="menu-item-62592" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-62592"><a href="#">Features</a>
-        <ul class="sub-menu">
-        <li id="menu-item-62593" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-62593"><a href="#">Shortcodes</a>
-        <ul class="sub-menu">
-        <li id="menu-item-62594" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62594"><a href="blogs/index.htm">Blogs</a></li>
-        <li id="menu-item-62595" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62595"><a href="charts/index.htm">Charts</a></li>
-        <li id="menu-item-62596" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62596"><a href="circle-progress/index.htm">Circle Progress</a></li>
-        <li id="menu-item-62597" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62597"><a href="contact-forms/index.htm">Contact Forms</a></li>
-        <li id="menu-item-62598" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62598"><a href="counters/index.htm">Counters</a></li>
-        </ul>
-        </li>
-        <li id="menu-item-62599" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-62599"><a href="#">Shortcodes</a>
-        <ul class="sub-menu">
-        <li id="menu-item-62600" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62600"><a href="day-counter/index.htm">Day Counter</a></li>
-        <li id="menu-item-62601" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62601"><a href="feature-box/index.htm">Feature Box</a></li>
-        <li id="menu-item-62602" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62602"><a href="flipbox/index.htm">Flipbox</a></li>
-        <li id="menu-item-62603" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62603"><a href="google-maps/index.htm">Google Maps</a></li>
-        <li id="menu-item-62604" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62604"><a href="mailchimp/index.htm">Mailchimp</a></li>
-        </ul>
-        </li>
-        <li id="menu-item-62605" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-62605"><a href="#">Shortcodes</a>
-        <ul class="sub-menu">
-        <li id="menu-item-62606" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62606"><a href="modal-popup/index.htm">Modal Popup</a></li>
-        <li id="menu-item-62607" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62607"><a href="popover/index.htm">Popover</a></li>
-        <li id="menu-item-62608" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62608"><a href="progress-bar/index.htm">Progress Bar</a></li>
-        <li id="menu-item-62609" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62609"><a href="service-styles/index.htm">Service Styles</a></li>
-        <li id="menu-item-62610" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62610"><a href="tabs/index.htm">Tabs</a></li>
-        </ul>
-        </li>
-        <li id="menu-item-62611" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-62611"><a href="#">Shortcodes</a>
-        <ul class="sub-menu">
-        <li id="menu-item-62612" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62612"><a href="timeline/index.htm">Timeline</a></li>
-        <li id="menu-item-62613" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62613"><a href="video-popup/index.htm">Video Popup</a></li>
-        <li id="menu-item-62614" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-62614"><a href="#">Unlimited Headers</a></li>
-        <li id="menu-item-62615" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-62615"><a href="#">Unlimited Footers</a></li>
-        </ul>
-        </li>
-        </ul>
-        </li>
-        <li id="menu-item-62616" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-62616"><a href="projects/index.htm">Projects</a>
-        <ul class="sub-menu">
-        <li id="menu-item-62617" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-62617"><a href="projects-grid-2/index.htm">Projects Grid</a>
-        <ul class="sub-menu">
-        <li id="menu-item-62618" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62618"><a href="projects-grid-2/index.htm">Projects Grid 2</a></li>
-        <li id="menu-item-62619" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62619"><a href="projects/index.htm">Projects Grid 3</a></li>
-        <li id="menu-item-62620" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62620"><a href="projects-grid-4/index.htm">Projects Grid 4</a></li>
-        </ul>
-        </li>
-        <li id="menu-item-62621" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-62621"><a href="projects-masonry/index.htm">Projects Masonry</a>
-        <ul class="sub-menu">
-        <li id="menu-item-62622" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62622"><a href="masonry-classic/index.htm">Masonry Classic</a></li>
-        <li id="menu-item-62623" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62623"><a href="masonry-classic-pro/index.htm">Masonry Classic Pro</a></li>
-        <li id="menu-item-62624" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62624"><a href="masonry-modern/index.htm">Masonry Modern</a></li>
-        </ul>
-        </li>
-        <li id="menu-item-62625" class="menu-item menu-item-type-post_type menu-item-object-cea-portfolio menu-item-62625"><a href="portfolio/electric-application/index.htm">Project Details</a></li>
-        </ul>
-        </li>
-        <li id="menu-item-62626" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-62626"><a href="blog/index.htm">Blog</a>
-        <ul class="sub-menu">
-        <li id="menu-item-62627" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62627"><a href="blog/index.htm">Blog Standard</a></li>
-        <li id="menu-item-62628" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-62628"><a href="blog/index.htm">Blog Grid</a>
-        <ul class="sub-menu">
-        <li id="menu-item-62629" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62629"><a href="2-columns/index.htm">2 Columns</a></li>
-        <li id="menu-item-62630" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62630"><a href="2-columns-sidebar/index.htm">2 Columns + Sidebar</a></li>
-        <li id="menu-item-62631" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62631"><a href="3-columns/index.htm">3 Columns</a></li>
-        <li id="menu-item-62632" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62632"><a href="4-columns-fullwidth/index.htm">4 Columns Fullwidth</a></li>
-        </ul>
-        </li>
-        <li id="menu-item-62633" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-62633"><a href="get-the-hybrid-watches-for-your-electric-car/index.htm">Blog Details</a></li>
-        </ul>
-        </li>
-        <li id="menu-item-62634" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62634"><a href="contact-us/index.htm">Contact Us</a></li>
-        </ul>
-        </nav><!-- .mobile-menu-wrapper --> 					<form role="search" class="form-inline search-form" action="https://wordpress.zozothemes.com/explug/">
+        </nav>	
+	<form role="search" class="form-inline search-form" action="https://wordpress.zozothemes.com/explug/">
         <div class="input-group">
         <input class="form-control" type="text" placeholder="Search" value="" name="s">
         <span class="input-group-btn">
         <button class="btn btn-outline-success" type="submit"><span class="bi bi-search"></span></button>
         </span>
         </div>
-        </form>
+    </form>
         </div>
         <!-- .mobile-menu-floating -->		<a href="index.htm" class="back-to-top" id="back-to-top"><i class="bi bi-caret-up-fill"></i></a>
      </div>
