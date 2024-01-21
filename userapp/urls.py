@@ -80,7 +80,13 @@ urlpatterns = [
     path("demo3/", views.demo3, name="demo2"),
     path("convert/", views.ConvertVehicle, name="convert"),
     path("build_cs/", views.buildcs, name="build_cs"),
-]
+    path("about-us/", views.aboutus, name="aboutus"),
+    path("navaic/", views.navaic, name="navaic"),
+    path("traffic-congestion/", views.traffic, name="traffic"),
+    path("navigation/", views.navigation, name="navigation"),
+    path("nearby-charging-stations/", views.station, name="stations"),
+
+    ]
 
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -1,0 +1,247 @@
+{% load static %}
+
+<html>
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta charset="UTF-8">
+  <title>Navigator</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+
+  <link rel="stylesheet" type="text/css" href="https://api.tomtom.com/maps-sdk-for-web/cdn/5.x/5.36.1/maps/maps.css">
+  <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/5.x/5.36.1/maps/maps-web.min.js"></script>
+  <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/5.x/5.36.1/services/services-web.min.js"></script>
+  <script src="{% static 'navaic/chargingAvailability.js' %}"></script>
+      <link rel="stylesheet" href="{% static 'navaic/home.css' %}" />
+
+
+
+      <header>
+        <a href="{%  url 'index' %}"><img class="logo" src="{% static 'navaic/logo-inner(1).png' %}"
+          alt="logo"></a>
+          <!-- <nav>
+            <ul class="nav_links">
+                <li><a href="{%  url 'index' %}">Home</a></li>
+                <li><a href="{% url 'navigation'%}">Search Stations</a></li>
+                <li><a href="{% url 'stations' %}">Navigation</a></li>
+                <li><a href="{% url 'traffic' %}">Traffic Detector  </a></li>
+            </ul>
+          </nav> -->
+      </header>
+   
+
+  <style>
+  
+  
+nav, header, .nav_links, li{
+    background-color: #000000;
+}
+
+.logo{
+      width: auto;
+      height: 50px;
+      background-color: inherit;
+      cursor: pointer;
+      margin-right: auto;
+}
+
+li, a {
+    font-family: "Montserrat", sans-serif;
+    font-family: 400;
+    font-size: 16px;
+    color: #ededed;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 10%;
+}
+
+.nav_links{
+    list-style: none;
+    margin-top: 10px;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: #22d139;
+    text-decoration: none;
+}
+
+/* Reset some default styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  max-height: 100%;
+  font-family: "Inter", sans-serif;
+  background-color: ;
+}
+
+
+
+/* Left Panel Styles */
+#left {
+  width: 300px;
+  position: fixed;
+  left: 0;
+  height: 100vh;
+  padding: 20px;
+  
+  overflow-y: auto;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Adjust the alpha (last value) for transparency */
+  z-index: 1; /* Place the overlay on top */
+}
+
+#controls {
+  margin-bottom: 50px;
+}
+
+/* Right Panel Styles */
+#right {
+  margin-left: 300px;
+}
+
+#map {
+  width: 100vw;
+  height: 100vh;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* Distance and Location Styles */
+#distance,
+#location {
+  width: calc(100% - 20px);
+  height: 40px;
+  margin: 10px 0;
+  padding: 0 10px;
+  border: 1px solid #ddd;
+  
+}
+
+#distance {
+  background-color: #f9f9f9;
+}
+
+#location {
+  background-color: #fff;
+}
+
+/* Button Styles */
+.btn {
+  margin-top: 10px;
+  width: 60%;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  align:center;
+  border: none;
+  color: #fff;
+  background: #84c951;
+  transition: filter 0.3s, transform 0.3s;	
+}
+
+.btn:hover {
+  cursor: pointer;
+  filter: brightness(110%);
+  transform: scale(1.05);
+}
+
+/* Location Button Styles */
+.loc {
+  margin-top: 10px;
+  width: 100%;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  background: linear-gradient(#0e5a0e 99%);
+  transition: filter 0.3s, transform 0.3s;
+}
+
+.loc:hover {
+  cursor: pointer;
+  filter: brightness(110%);
+  transform: scale(1.05);
+}
+
+
+/* Add responsive styles using media queries */
+@media screen and (max-width: 768px) {
+  #left {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: auto;
+	
+  }
+
+  #right {
+    margin-left: 0;
+  }
+
+  #map {
+    margin-top: 0;
+  }
+
+  #toggleBtn {
+    display: block;
+  }
+
+  #controls {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .overlay {
+    display: none;
+  }
+}
+
+
+  </style>
+</head>
+
+<body>
+  <div id="left">
+    <div id="controls">
+      <label for="location" class="loc"> Location </label>
+      <input class="text" id="location" type="text" />
+      <br>
+      <label for="max_dist" class="loc">Distance</label>
+      <input class="text" id="distance" type="text"/>
+      <br />
+      <input type="button" class="btn" value="Find Stations" onclick="findLocation()" />
+    </div></div>
+    <hr>
+    <div id="right">
+      <div id="map" class="map"></div>
+    </div>
+
+
+    <script src="{% static 'navaic/ev_search.js' %}"></script>
+
+</body>
+
+</html>

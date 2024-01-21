@@ -839,3 +839,14 @@ def ConvertVehicle(request):
 
 def buildcs(request):
     return render(request, "userapp/build_cs.html")
+
+def aboutus(request):
+    return render(request, "userapp/aboutus.htm")
+def navaic(request):
+    return render(request, "userapp/navaic.htm")
+def station(request):
+    return render(request, "userapp/station.htm")
+def navigation(request):
+    return render(request, "userapp/navigation.htm")
+def traffic(request):
+    return render(request, "userapp/traffic.htm")

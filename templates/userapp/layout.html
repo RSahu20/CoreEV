@@ -152,8 +152,12 @@
 	<link rel='stylesheet' id='elementor-post-15-css' href="{% static 'wp-content/uploads/sites/10/elementor/css/post-15.css' %}"
 		media='all'>
 	<link rel='stylesheet' id='elementor-post-57241-css' href="{% static 'wp-content/uploads/sites/10/elementor/css/post-57241.css' %}"
-		media='all'>
 
+		media='all'>
+		<link rel='stylesheet' id='elementor-post-56228-css' href="{% static 'wp-content/uploads/sites/10/elementor/css/post-56228.css' %}" media='all'>
+
+		<link rel='stylesheet' id='elementor-post-59015-css' href="{% static 'wp-content/uploads/sites/10/elementor/css/post-59015.css' %}"
+		media='all'>
 	<link data-minify="1" rel='stylesheet' id='elementor-icons-shared-2-css'
 		href='wp-content/cache/min/10/explug/wp-content/plugins/classic-elementor-addons-pro/assets/css/bootstrap-icons.css'
 		media='all'>
@@ -355,14 +359,14 @@
                                        </ul>
                                     </li> -->
                                     <li id="menu-item-57888" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-57888">
-                                       <a href="our-services/index.htm">latest
+                                       <a href="{%  url 'index' %}">latest
                                        <ul class="sub-menu">
                                           <li id="menu-item-61787" class="menu-item menu-item-type-post_type menu-item-object-cea-service menu-item-61787"><a href="service/corporate-business/index.htm">Tips & Tricks</a></li>
 										  <li id="menu-item-61787" class="menu-item menu-item-type-post_type menu-item-object-cea-service menu-item-61787"><a href="service/corporate-business/index.htm">News & blogs</a></li>
                                          </ul>
                                     </li>
 									<li>  
-										<a href="{%  url 'index' %}" aria-current="page">About us </a>
+										<a href="{% url 'aboutus' %}" aria-current="page">About us </a>
    
 									   </li>
                                   <li>  
@@ -384,9 +388,10 @@
                     {% endif %}
                     <li><a href="{% url 'account_logout' %}" class="login">Log out</a></li>
                     {% else %}
+					<li><a href="{% url 'register' %}" class="signup" >Join Us</a></li>
                     <li><a href="{% url 'account_login' %}" class="login" >Log in</a></li>
 
-                    <li><a href="{% url 'register' %}" class="signup" >Sign up</a></li>
+                    
 					<!-- <li id="menu-item-57888" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-57888">
 						<a href="our-services/index.htm">Services</a>
 						<ul class="sub-menu">
@@ -406,14 +411,14 @@
                            <!-- .header-navigation-wrapper -->
                         </ul>
                         
-                        <ul class="nav navbar-ul pull-right justify-content-end right-element-exist">
-                           <li>				<a class="full-search-toggle" href="#"><i class="bi bi-search"></i></a>
-                           </li>
-                           <li><a href="tel:5284567592" class="h-phone"><i class="bi bi-telephone-forward-fill mr-2"></i></a></li>
-                           <li class="secondary-toggle-wrapper">
-                              <a href="index.htm" class="secondary-menu-toggle explug-toggle"><span></span><span></span><span></span></a>
-                           </li>
-                        </ul>
+						<ul class="nav navbar-ul pull-right justify-content-end right-element-exist">
+							<li>				<a class="full-search-toggle" href="#"><i class="bi bi-search"></i></a>
+							</li>
+							<li><a href="tel:5284567592" class="h-phone"><i class="bi bi-telephone-forward-fill mr-2"></i></a></li>
+							<li class="secondary-toggle-wrapper">
+							   <a href="{%  url 'index' %}" class="secondary-menu-toggle explug-toggle"><span></span><span></span><span></span></a>
+							</li>
+						 </ul>
                      </div>
                      <!-- .container -->
                   </div>
@@ -492,7 +497,7 @@
 			</div><!-- .mailchimp-wrapper -->
 			
 			</div></div><div class="widget widget_block"><div class="widget-content"><div class="cus-contact">
-<a href="mailto:mihiragarwal15@gmail.com"><i class="bi bi-envelope theme-color ms-1 mr-2"></i>mihriagarwal15@.com</a><a href="tel:+11234567890"><i class="bi bi-globe2 mr-2"></i>FAX - 555-123-4567</a></div></div></div>					</aside>
+<a href="mailto:rajsahu192002@gmail.com"><i class="bi bi-envelope theme-color ms-1 mr-2"></i>rajsahu19@.com</a><a href="tel:+11234567890"><i class="bi bi-globe2 mr-2"></i>FAX - 555-123-4567</a></div></div></div>					</aside>
 						</div><!-- .row -->
 	</div><!-- .container -->
 </div><!-- .footer-widgets-wrap -->
@@ -517,7 +522,7 @@
 
         <div class="full-search-wrapper">
         <a class="full-search-toggle close" href="#"></a>
-        <form role="search" class="form-inline search-form" action="https://wordpress.zozothemes.com/explug/">
+        <form role="search" class="form-inline search-form" action="https://coreev.onrender.com/">
         <div class="input-group">
         <input class="form-control" type="text" placeholder="Search" value="" name="s">
         <span class="input-group-btn">
@@ -528,18 +533,18 @@
         </div>
         <div class="secondary-bar-wrapper from-right">
         <div class="secondary-bar-inner">
-        <a href="index.htm" class="secondary-menu-toggle explug-toggle"><span></span><span></span><span></span></a>
+        <a href="{%  url 'index' %}" class="secondary-menu-toggle explug-toggle"><span></span><span></span><span></span></a>
         <div class="widget widget_block"><div class="widget-content"><div class="widget text-widget-content mb-0">
         <div class="widget-content">
-        <a href="index.htm"><img decoding="async" src="{% static 'wp-content/uploads/sites/10/2023/08/ep-logo-dark-footer.png' %}" alt="footer-logo" class="img-fluid pb-1"></a>
-        <div class="text-widget-inner pt-3"><span class="text-widget-content-text">Explug process of planning, implementing and electric, cars, bikes, or trains.</span></div>
+        <a href="{%  url 'index' %}"><img decoding="async" src="{% static 'wp-content/uploads/sites/10/2023/08/h-logo-white.png' %}" alt="footer-logo" class="img-fluid pb-1"></a>
+        <div class="text-widget-inner pt-3"><span class="text-widget-content-text">	One Stop Solution for Electric Vehicles</span></div>
         </div>
         </div></div></div><div class="widget explug_contact_info_widget"><div class="widget-content"><div class="contact-widget-wrap" data-css="&quot;&quot;"><h3 class="widget-title subheading heading-size-3">Contact Info</h3>			
         <div class="contact-widget widget-content">
         <div class="contact-widget-info">
-        <p class="contact-address"><span class="bi bi-geo-alt"></span><span>684 West College St. Sun City, United States America, 064781.</span></p>
-        <p class="contact-phone"><span class="bi bi-headset"></span><span><a href="tel:+(528)456-7592">+(528) 456-7592</a></span></p>
-        <p class="contact-email"><span class="bi bi-envelope"></span><span><a href="mailto:info@explug.com">info@explug.com</a></span></p>
+        <p class="contact-address"><span class="bi bi-geo-alt"></span><span>Noida Sector 62,Gautam Budh Nagar, 201301.</span></p>
+        <p class="contact-phone"><span class="bi bi-headset"></span><span><a href="tel:+(528)456-7592">+91 78607392XX</a></span></p>
+        <p class="contact-email"><span class="bi bi-envelope"></span><span><a href="mailto:info@explug.com">info@corev.com</a></span></p>
         </div><!-- .contact-widget-info -->
         </div>
         </div><!-- .contact-widget-wrap --></div></div><div class="widget widget_block"><div class="widget-content">
@@ -547,9 +552,9 @@
         <div class="widget-service-contact text-center">
         <div class="widget-service-icon d-block pt-4 mb-4"><i class="bi bi-headset widget-icon"></i></div>
         <h4 class="widget-service-title text-white mb-4">Do You Need Any Help?</h4>
-        <h5><a href="tel:+5284567592" class="text-white">+(528) 456-7592</a></h5>
-        <div class="ser-mail mb-5"><a href="mailto:info@example.com" class="d-block text-white">info@example.com</a></div>
-        <div class="widget-service-button"><a href="#" class="d-block font-weight-bold text-white text-uppercase">View More</a></div>
+        <h5><a href="tel:+5284567592" class="text-white">+999 456-7592</a></h5>
+        <div class="ser-mail mb-5"><a href="mailto:info@example.com" class="d-block text-white">info@coreev.com</a></div>
+        <div class="widget-service-button"><a href="https://github.com/RSahu20" class="d-block font-weight-bold text-white text-uppercase">View More</a></div>
         </div>
         </div></div>
         </div></div>			</div>
@@ -569,8 +574,8 @@
 			</li>
 			<li id="menu-item-62574" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-62574"><a href="#">Latest</a>
 			<ul class="sub-menu">
-			<li id="menu-item-62575" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62575"><a href="about-us/index.htm">Tips & Tricks</a></li>
-			<li id="menu-item-62576" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62576"><a href="our-history/index.htm">News & blogs</a></li>
+			<li id="menu-item-62575" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62575"><a href="{%  url 'index' %}">Tips & Tricks</a></li>
+			<li id="menu-item-62576" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62576"><a href="{%  url 'index' %}">News & blogs</a></li>
 			</ul>
 			</li>
 				<li><a href="{%  url 'index' %}" aria-current="page">About us </a></li>				  
@@ -590,20 +595,13 @@
 				<li><a href="{% url 'account_login' %}" class="login" >Log in</a></li>
 
 				<li><a href="{% url 'register' %}" class="signup" >Sign up</a></li>
-				<!-- <li id="menu-item-57888" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-57888">
-					<a href="our-services/index.htm">Services</a>
-					<ul class="sub-menu">
-					   <li id="menu-item-61787" class="menu-item menu-item-type-post_type menu-item-object-cea-service menu-item-61787"><a href="{% url 'account_login' %}">Corporate Business</a></li>
-
-					   <li id="menu-item-61787" class="menu-item menu-item-type-post_type menu-item-object-cea-service menu-item-61787"><a href="{% url 'account_login' %}">Corporate Business</a></li>
-					  </ul>
-				 </li> -->
+		
 				{% endif %} 
 
         </ul>
         </nav><!-- .mobile-menu-wrapper --> 					
 		
-		<form role="search" class="form-inline search-form" action="https://wordpress.zozothemes.com/explug/">
+		<form role="search" class="form-inline search-form" action="https://coreev.onrender.com/">
         <div class="input-group">
         <input class="form-control" type="text" placeholder="Search" value="" name="s">
         <span class="input-group-btn">
@@ -612,7 +610,7 @@
         </div>
         </form>
         </div>
-        <!-- .mobile-menu-floating -->		<a href="index.htm" class="back-to-top" id="back-to-top"><i class="bi bi-caret-up-fill"></i></a>
+        <!-- .mobile-menu-floating -->		<a href="{%  url 'index' %}" class="back-to-top" id="back-to-top"><i class="bi bi-caret-up-fill"></i></a>
      </div>
      <!-- .explug-body-inner -->
 
@@ -689,6 +687,8 @@
 
 
 	<script src="{% static 'wp-content/cache/min/10/89e736852a7db5609995fd28ff210c3f.js' %}" data-minify="1"></script>
+
+
 </body>
 
 </html>
